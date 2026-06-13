@@ -4,6 +4,7 @@ import Onboarding from "./pages/Onboarding";
 import ArchetypeHub from "./pages/ArchetypeHub";
 import Dashboard from "./pages/Dashboard";
 import ComingSoon from "./pages/ComingSoon";
+import Social from "./pages/Social";
 import { useAppContext } from "./context/AppContext";
 
 function RequireArchetype({ children }: { children: ReactNode }) {
@@ -37,7 +38,7 @@ export default function App() {
       <Route path="/health" element={<ComingSoon title="Health" />} />
       <Route path="/style" element={<ComingSoon title="Style" />} />
       <Route path="/finance" element={<ComingSoon title="Finance" />} />
-      <Route path="/social" element={<ComingSoon title="Social" />} />
+      <Route path="/social" element={<Social />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );

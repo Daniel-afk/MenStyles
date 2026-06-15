@@ -51,12 +51,12 @@ export default function Onboarding() {
 
   return (
     <PageContainer>
-      <h1 className="text-3xl font-bold text-gray-900 mb-1">MenStyles</h1>
-      <p className="text-gray-500 mb-6">Let's build a lifestyle plan that fits you.</p>
+      <h1 className="text-2xl font-bold text-gray-900 mb-0.5">MenStyles</h1>
+      <p className="text-sm text-gray-500 mb-4">Let's build a lifestyle plan that fits you.</p>
 
       <ProgressIndicator current={step} total={4} labels={STEP_LABELS} />
 
-      <div className="rounded-2xl bg-white p-6 shadow-sm border border-gray-100">
+      <div className="rounded-2xl bg-white p-4 shadow-sm border border-gray-100">
         {step === 1 && <StepStats value={stats} onChange={setStats} />}
         {step === 2 && (
           <StepLocation
@@ -72,12 +72,12 @@ export default function Onboarding() {
         )}
       </div>
 
-      <div className="mt-6 flex justify-between">
+      <div className="mt-4 flex justify-between">
         <button
           type="button"
           onClick={handleBack}
           disabled={step === 1}
-          className="rounded-lg px-4 py-2 font-medium text-gray-700 border border-gray-300 disabled:opacity-50"
+          className="rounded-lg px-4 py-1.5 text-sm font-medium text-gray-700 border border-gray-300 disabled:opacity-50"
         >
           Back
         </button>
@@ -85,7 +85,7 @@ export default function Onboarding() {
           type="button"
           onClick={handleNext}
           disabled={!isStepValid()}
-          className="rounded-lg bg-primary-600 px-4 py-2 font-medium text-white hover:bg-primary-700 disabled:opacity-50"
+          className="rounded-lg bg-primary-600 px-4 py-1.5 text-sm font-medium text-white hover:bg-primary-700 disabled:opacity-50"
         >
           {step === 4 ? "Generate my profile" : "Next"}
         </button>

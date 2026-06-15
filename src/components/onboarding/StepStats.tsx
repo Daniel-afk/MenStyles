@@ -13,11 +13,11 @@ export default function StepStats({ value, onChange }: StepStatsProps) {
 
   return (
     <div>
-      <h2 className="text-2xl font-bold text-gray-900">Let's start with the basics</h2>
-      <p className="mt-1 text-gray-500">
+      <h2 className="text-xl font-bold text-gray-900">Let's start with the basics</h2>
+      <p className="mt-1 text-sm text-gray-500">
         This helps us tailor your plan to where you're starting from and what you're working toward.
       </p>
-      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
         <label className="block">
           <span className="text-sm font-medium text-gray-700">Age</span>
           <input
@@ -25,7 +25,7 @@ export default function StepStats({ value, onChange }: StepStatsProps) {
             min={0}
             value={value.age || ""}
             onChange={(e) => update("age", e.target.value)}
-            className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500"
+            className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-primary-500"
             placeholder="e.g. 28"
           />
         </label>
@@ -36,7 +36,7 @@ export default function StepStats({ value, onChange }: StepStatsProps) {
             min={0}
             value={value.heightCm || ""}
             onChange={(e) => update("heightCm", e.target.value)}
-            className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500"
+            className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-primary-500"
             placeholder="e.g. 178"
           />
         </label>
@@ -47,7 +47,7 @@ export default function StepStats({ value, onChange }: StepStatsProps) {
             min={0}
             value={value.weightKg || ""}
             onChange={(e) => update("weightKg", e.target.value)}
-            className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500"
+            className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-primary-500"
             placeholder="e.g. 75"
           />
         </label>
@@ -58,7 +58,7 @@ export default function StepStats({ value, onChange }: StepStatsProps) {
             min={0}
             value={value.annualIncome || ""}
             onChange={(e) => update("annualIncome", e.target.value)}
-            className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500"
+            className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-primary-500"
             placeholder="e.g. 65000"
           />
         </label>

@@ -20,10 +20,10 @@ export default function StepPriorities({ value, onChange }: StepPrioritiesProps)
 
   return (
     <div>
-      <h2 className="text-2xl font-bold text-gray-900">What matters most to you right now?</h2>
-      <p className="mt-1 text-gray-500">Pick 2-3 areas you'd like to focus on.</p>
+      <h2 className="text-xl font-bold text-gray-900">What matters most to you right now?</h2>
+      <p className="mt-1 text-sm text-gray-500">Pick 2-3 areas you'd like to focus on.</p>
 
-      <div className="mt-6 flex flex-wrap gap-2">
+      <div className="mt-4 flex flex-wrap gap-2">
         {ALL_PRIORITIES.map((priority) => (
           <PriorityChip
             key={priority}
@@ -34,7 +34,7 @@ export default function StepPriorities({ value, onChange }: StepPrioritiesProps)
         ))}
       </div>
 
-      <p className="mt-4 text-sm text-gray-500">
+      <p className="mt-3 text-sm text-gray-500">
         {value.length < 2
           ? `Select at least ${2 - value.length} more.`
           : value.length > 3

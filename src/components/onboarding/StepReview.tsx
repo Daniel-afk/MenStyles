@@ -11,13 +11,13 @@ interface StepReviewProps {
 export default function StepReview({ stats, homeCity, trip, priorities }: StepReviewProps) {
   return (
     <div>
-      <h2 className="text-2xl font-bold text-gray-900">Review your profile</h2>
-      <p className="mt-1 text-gray-500">
+      <h2 className="text-xl font-bold text-gray-900">Review your profile</h2>
+      <p className="mt-1 text-sm text-gray-500">
         Here's what we'll use to build your personalized lifestyle plan.
       </p>
 
-      <div className="mt-6 space-y-4">
-        <div className="rounded-xl border border-gray-100 bg-white p-4 shadow-sm">
+      <div className="mt-4 space-y-3">
+        <div className="rounded-xl border border-gray-100 bg-white p-3 shadow-sm">
           <h3 className="text-sm font-semibold text-gray-500">Basics</h3>
           <dl className="mt-2 grid grid-cols-2 gap-2 text-sm">
             <dt className="text-gray-500">Age</dt>
@@ -31,7 +31,7 @@ export default function StepReview({ stats, homeCity, trip, priorities }: StepRe
           </dl>
         </div>
 
-        <div className="rounded-xl border border-gray-100 bg-white p-4 shadow-sm">
+        <div className="rounded-xl border border-gray-100 bg-white p-3 shadow-sm">
           <h3 className="text-sm font-semibold text-gray-500">Location</h3>
           <p className="mt-2 text-sm text-gray-900">Home city: {homeCity || "Not provided"}</p>
           {trip && (
@@ -43,7 +43,7 @@ export default function StepReview({ stats, homeCity, trip, priorities }: StepRe
           )}
         </div>
 
-        <div className="rounded-xl border border-gray-100 bg-white p-4 shadow-sm">
+        <div className="rounded-xl border border-gray-100 bg-white p-3 shadow-sm">
           <h3 className="text-sm font-semibold text-gray-500">Priorities</h3>
           <div className="mt-2 flex flex-wrap gap-2">
             {priorities.map((p) => (
